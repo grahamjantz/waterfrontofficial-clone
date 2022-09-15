@@ -5,7 +5,7 @@ import './NewRelease.css'
 const NewRelease = ({ title, imgSrc, subtitle, description}) => {
   return (
     <div className='new-release-card'>
-        <img src={imgSrc} alt={title} className='new-release-cover'/>
+        <img className='new-release-cover' src={imgSrc} alt={title} />
         <h2 className='new-release-title'>{title}</h2>
         <h3 className='new-release-subtitle'>{subtitle}</h3>
         <p className='new-release-description'>{description}</p>

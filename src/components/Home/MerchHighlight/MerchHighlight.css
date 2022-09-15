@@ -1,0 +1,7 @@
+.merch-item {
+    display: flex;
+}
+
+.merch-img {
+    width: 400px;
+}

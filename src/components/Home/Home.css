@@ -45,3 +45,51 @@
     gap: 5em;
     padding-top: 5em;
 }
+
+.merch-highlights {
+    display: flex;
+}
+
+.about-us {
+    width: 100%;
+    height: fit-content;
+    background-image: url('../../images/textures/WF-Flat-Paper-Texture.1.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+    padding-top: 10em;
+    padding-bottom: 12em;
+}
+
+.about-us-title {
+    font-family: 'MADE Outer Sans Black';
+    font-size: 3em;
+    color: var(--main-yellow);
+    margin: 1em;
+}
+
+.about-us-img-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.live-at-owl {
+    height: 300px;
+    width: auto;
+}
+
+.about-us-paragraph {
+    margin: 4em 0;
+    width: 50%;
+    color: var(--main-white);
+    font-family: 'MADE Outer Sans Light';
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

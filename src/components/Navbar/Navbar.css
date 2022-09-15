@@ -44,9 +44,12 @@
 }
 
 .subnav {
+    align-self: flex-end;
+    margin-right: 2em;
     display: flex;
     width: 50%;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 2em;
 }
 
 .subnav a {

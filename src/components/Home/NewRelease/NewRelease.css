@@ -17,7 +17,7 @@
 .new-release-cover {
     grid-area: image;
     width: 300px;
-    height: auto;
+    
 }
 
 .new-release-title {
