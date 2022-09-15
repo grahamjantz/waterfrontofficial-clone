@@ -1,38 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MADE Outer Sans Black';
+  src: url('../src/fonts/made_outer_sans/MADE-Outer-Sans-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MADE Outer Sans Bold';
+  src: url('../src/fonts/MADE-Outer-Sans-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MADE Outer Sans Medium';
+  src: url('../src/fonts/made_outer_sans/MADE-Outer-Sans-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MADE Outer Sans Light';
+  src: url('../src/fonts/made_outer_sans/MADE-Outer-Sans-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MADE Outer Sans Thin';
+  src: url('../src/fonts/made_outer_sans/MADE-Outer-Sans-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: 'MADE Outer Sans Regular';
+  src: url('../src/fonts/made_outer_sans/MADE-Outer-Sans-Regular.otf') format('opentype');
+}
+
+:root {
+  --main-yellow: #ffecb1;
+  --main-black: #000000;
+  --main-white: #ffffff;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  overflow-x: clip;
 }
