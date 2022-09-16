@@ -1,0 +1,14 @@
+.coming-soon {
+    width: 100%;
+    height: 500px;
+    background-image: url('../../images/textures/WF-Midroll-Paper-Texture-half.1.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-white);
+    font-family: 'MADE Outer Sans Black';
+}

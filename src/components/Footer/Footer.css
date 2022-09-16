@@ -1,0 +1,69 @@
+.footer {
+    width: 100%;
+    height: fit-content;
+    background-image: url('../../images/textures/WF-Yellow-Paper-Texture.1.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-title {
+    font-family: 'MADE Outer Sans Black';
+    font-size: 2em;
+    color: var(--main-black);
+    margin: 1em;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: 'MADE Outer Sans Thin';
+    color: var(--main-black);
+    width: 60%;
+}
+
+.subscribe-form input, .subscribe-form textarea {
+    background-color: transparent;
+    color: var(--main-black);
+    border: 1px solid var(--main-black);
+    padding: 1em;
+}
+
+.subscribe-form input::placeholder, .subscribe-form textarea::placeholder {
+    color: var(--main-black);
+    font-family: 'MADE Outer Sans Thin';
+}
+
+.subscribe-submit {
+    color: var(--main-black);
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid var(--main-black);
+    border-radius: 20px;
+    font-family: 'MADE Outer Sans Thin';
+    width: fit-content;
+    align-self: center;
+}
+
+.subscribe-submit:hover {
+    background-color: var(--main-black);
+    color: var(--main-yellow);
+}
+
+.footer-socials {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+}
+
+.footer-socials a {
+    color: var(--main-black);
+}
+.footer-socials a:hover {
+    color: var(--main-white);
+}

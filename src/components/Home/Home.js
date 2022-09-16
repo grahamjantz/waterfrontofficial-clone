@@ -2,7 +2,6 @@ import React from 'react'
 import './Home.css'
 import Button from '../Button/Button'
 import NewRelease from './NewRelease/NewRelease'
-import Song from './Song/Song'
 import MerchHighlight from './MerchHighlight/MerchHighlight'
 import wffCover from '../../images/artwork/wffArtwork.png'
 import tylCover from '../../images/artwork/3YLArtwork.png'
@@ -13,6 +12,7 @@ import liveAtTheOwl from '../../images/photos/liveAtTheOwl.jpg'
 import redAlliance from '../../audio/Red-Alliance-Master.wav'
 import threeYearsLater from '../../audio/Three-Years-Later-Master.wav'
 import worthFightingFor from '../../audio/Worth-Fighting-For-Master.wav'
+import MusicPlayer from './MusicPlayer/MusicPlayer'
 
 const Home = () => {
   return (
@@ -75,10 +75,27 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='listen'>
-        <Song src={redAlliance}/>
-        <Song src={threeYearsLater}/>
-        <Song src={worthFightingFor}/>
+      <div className='listen-section'>
+        <h3 className='listen-title'>LISTEN</h3>
+        <MusicPlayer 
+          redAlliance={redAlliance}
+          threeYearsLater={threeYearsLater}
+          worthFightingFor={worthFightingFor}
+        />
+      </div>
+      <div className='contact'>
+        <h3 className='contact-title'>CONTACT US</h3>
+        <form className='contact-form'>
+          <label htmlFor='name'>Name *</label>
+          <input id='name' name='name' type='text' placeholder='Enter Your Name' required></input>
+          <label htmlFor='email'>Email *</label>
+          <input id='email' name='email' type='email' placeholder='Enter Your Email' required></input>
+          <label htmlFor='subject'>Subject</label>
+          <input id='subject' name='subject' type='text' placeholder='Enter Your Subject' required></input>
+          <label htmlFor='message'>Message *</label>
+          <textarea id='message' name='message' placeholder='Enter Your Message' rows='10'></textarea>
+          <button type='submit' className='contact-submit'>SUBMIT</button>
+        </form>
       </div>
     </div>
   )
