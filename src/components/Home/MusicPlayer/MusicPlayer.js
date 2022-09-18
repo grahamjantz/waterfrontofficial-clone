@@ -1,9 +1,9 @@
 import React from 'react'
 import Song from '../Song/Song'
 import './MusicPlayer.css'
-import redAllianceCover from '../../../images/artwork/3YLArtwork.png'
-import threeYLArtwork from '../../../images/artwork/3YLArtwork.png'
-import wffArtwork from '../../../images/artwork/wffArtwork.png'
+import redAllianceCover from '../../../images/artwork/redAllianceArtwork.jpg'
+import threeYLArtwork from '../../../images/artwork/3YLArtwork.jpg'
+import wffArtwork from '../../../images/artwork/wffArtwork.jpg'
 
 
 const MusicPlayer = ({ redAlliance, threeYearsLater, worthFightingFor}) => {

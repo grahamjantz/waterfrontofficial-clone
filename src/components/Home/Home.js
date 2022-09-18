@@ -3,8 +3,8 @@ import './Home.css'
 import Button from '../Button/Button'
 import NewRelease from './NewRelease/NewRelease'
 import MerchHighlight from './MerchHighlight/MerchHighlight'
-import wffCover from '../../images/artwork/wffArtwork.png'
-import tylCover from '../../images/artwork/3YLArtwork.png'
+import wffCover from '../../images/artwork/wffArtwork.jpg'
+import tylCover from '../../images/artwork/3YLArtwork.jpg'
 import yellowTee from '../../images/merch/3YLExclusiveSpacemanTee.png'
 import blueCrewneck from '../../images/merch/3YLBlueCrewneck.png'
 import beanie from '../../images/merch/WaterfrontBeanie.png'
@@ -58,11 +58,11 @@ const Home = () => {
         text='FULL MERCH STORE'
       />
       </div>
-      <div className='about-us'>
-        <h3 className='about-us-title'>ABOUT US</h3>
-        <div className='about-us-img-p'>
+      <div className='home-about-us'>
+        <h3 className='home-about-us-title'>ABOUT US</h3>
+        <div className='home-about-us-img-p'>
           <img className='live-at-owl'src={liveAtTheOwl} alt='waterfront live at the owl'/>
-          <div className='about-us-paragraph'>
+          <div className='home-about-us-paragraph'>
             <p>
               {'Coming together in 2019, Waterfront, consisting of Dan Sequeira (vocals), Ryan Ross (guitar), Devin Taylor (guitar), Tanner Cyr (bass/vocals), and Graham Jantz (drums), have come into their own with their 2021 debut EP ‘New Heights’.'}
             </p>
