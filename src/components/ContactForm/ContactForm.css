@@ -1,0 +1,54 @@
+.contact {
+    width: 100%;
+    background-image: url('../../images/textures/WF-Flat-Paper-Texture.1.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+}
+
+.contact-title {
+    margin: 0;
+    margin-top: 5em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: 'MADE Outer Sans Thin';
+    color: var(--main-yellow);
+    width: 60%;
+    margin-bottom: 20em;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: transparent;
+    color: var(--main-yellow);
+    border: 1px solid var(--main-yellow);
+    padding: 1em;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: var(--main-yellow);
+    font-family: 'MADE Outer Sans Thin';
+}
+
+.contact-submit {
+    color: var(--main-yellow);
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid var(--main-yellow);
+    border-radius: 20px;
+    font-family: 'MADE Outer Sans Thin';
+    width: fit-content;
+    align-self: center;
+}
+
+.contact-submit:hover {
+    background-color: var(--main-yellow);
+    color: var(--main-black)
+}

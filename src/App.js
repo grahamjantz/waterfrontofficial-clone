@@ -12,6 +12,10 @@ import Footer from './components/Footer/Footer'
 import ComingSoon from './components/ComingSoon/ComingSoon'
 import About from './components/About/About';
 
+export const ranNum = () => {
+  return Math.floor(Math.random() * 10000);
+}
+
 function App() {
   return (
     <div className='App'>

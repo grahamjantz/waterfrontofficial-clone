@@ -5,11 +5,9 @@ import wfBlackLogo from '../../images/textures/Waterfront-logo-black-texture.png
 import { FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaShoppingCart } from "react-icons/fa";
 import { BiLogInCircle } from "react-icons/bi";
 
-
-
 const ranNum = () => {
-    return Math.floor(Math.random() * 10000)
-}
+    return Math.floor(Math.random() * 10000);
+  }
 
 const navArr = [
     {

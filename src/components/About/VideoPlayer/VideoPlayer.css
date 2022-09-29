@@ -1,0 +1,14 @@
+.video-player {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-player:first-child {
+    width: 100%;
+}
+
+.video-player:nth-child(1), .video-player:nth-child(2), .video-player:nth-child(3) {
+    width: 30%;
+}

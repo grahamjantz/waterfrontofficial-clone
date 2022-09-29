@@ -1,0 +1,42 @@
+.press {
+    border-radius: 50px;
+    background-image: url('../../../images/textures/WF-Midroll-Paper-Texture.1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 500px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 6fr 2fr 1fr 1fr;
+    margin: 0.5em;
+    padding: 2em 1em;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.1s linear;
+}
+
+.press:hover {
+    cursor: pointer;
+    transform: translateY(-2px) translateX(-2px);
+}
+
+.press-title, .press-source {
+    font-family: 'MADE Outer Sans Thin';
+}
+
+.press-image{
+    height: 240px;
+}
+
+.press-button {
+    justify-self: center;
+    background-color: var(--main-yellow);
+}
+
+.press-button:hover {
+    background-color: transparent;
+    color: var(--main-yellow);
+    border: 1px solid var(--main-yellow);
+}
