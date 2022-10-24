@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import './Navbar.css'
-import wfBlackLogo from '../../images/textures/Waterfront-logo-black-texture.png'
-import { FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaShoppingCart } from "react-icons/fa";
-import { BiLogInCircle } from "react-icons/bi";
+// import wfBlackLogo from '../../images/textures/RA/waterfront-red-logo.1.png'
+import wfRedLogo from '../../images/textures/RA/wf-logo.1.png'
+import blackRip from '../../images/textures/blackRipTransition.1.png'
+import { FaInstagram, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+// import { BiLogInCircle } from "react-icons/bi";
+// FaShoppingCart <-- putback in import from font awesome when you need shopping cart icon
 
 const ranNum = () => {
     return Math.floor(Math.random() * 10000);
@@ -15,11 +18,11 @@ const navArr = [
         text: 'HOME',
         path: '/home'
     },
-    {
-        id: ranNum(),
-        text: 'MERCH',
-        path: '/merch'
-    },
+    // {
+    //     id: ranNum(),
+    //     text: 'MERCH',
+    //     path: '/merch'
+    // },
     {
         id: ranNum(),
         text: 'ABOUT',
@@ -47,27 +50,44 @@ const navArr = [
     },
 ]
 
-const navMap = navArr.map((item) => {
-    return (
-        <li key={item.id}>
-            <NavLink to={`${item.path}`} className='nav-btn'>
-                {item.text}
-            </NavLink>
-        </li>
-    )
-})
 
 const size = 25;
 
 const Navbar = () => {
+    
+    const [navTop, setNavTop] = useState('-500px')
+    const [navMenuClass, setNavMenuClass] = useState('inactive')
+    const handleClick = () => {
+        navTop === '-500px' ? setNavTop('0px') : setNavTop('-500px')
+        navMenuClass === 'inactive' ? setNavMenuClass('active') : setNavMenuClass('inactive')
+    }
+
+    const navMap = navArr.map((item) => {
+        return (
+            <li key={item.id}>
+                <NavLink to={`${item.path}`} className='nav-btn' onClick={handleClick}>
+                    {item.text}
+                </NavLink>
+            </li>
+        )
+    })
+
+
     return (
+        <>
         <div className='header'>
-            <Link to='/home'><img src={wfBlackLogo} alt='waterfront black logo' className='wf-black-logo' /></Link>
-            <nav className='nav'>
+            <Link to='/home' style={{ display: 'flex', justifyContent: 'center'}}>
+                <img src={wfRedLogo} alt='waterfront black logo' className='wf-red-logo' />
+            </Link>
+            <div className={`nav-menu`} onClick={handleClick}>
+                <span className={navMenuClass}></span>
+                <span className={navMenuClass}></span>
+                <span className={navMenuClass}></span>
+            </div>
+            <nav className='nav' style={{top: navTop}}>
                 <ul className='navbar'>
                     {navMap}
                 </ul>
-            </nav>
             <div className='subnav'>
                 <a href='https://www.instagram.com/waterfrontofficial/' target='_blank' rel="noreferrer" >
                     <FaInstagram size={size}/>
@@ -81,14 +101,17 @@ const Navbar = () => {
                 <a href='https://www.youtube.com/channel/UCPLUW_woeKR81y2ORqJIcXg' target='_blank' rel="noreferrer" >
                     <FaYoutube size={size} />
                 </a>
-                <button>
+                {/* <button>
                     <FaShoppingCart size={size} />
                 </button>
                 <button>
                     <BiLogInCircle size={size} />
-                </button>
+                </button> */}
             </div>
+            </nav>
         </div>
+            <img src={blackRip} alt='' className='black-header-rip'/>
+        </>
     )
 }
 

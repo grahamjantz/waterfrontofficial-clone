@@ -4,7 +4,6 @@ import './ContactForm.css'
 const ContactForm = () => {
   return (
     <div className='contact'>
-        <h3 className='contact-title'>CONTACT US</h3>
         <form className='contact-form'>
           <label htmlFor='name'>Name *</label>
           <input id='name' name='name' type='text' placeholder='Enter Your Name' required></input>

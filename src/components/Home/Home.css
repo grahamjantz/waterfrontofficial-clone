@@ -1,5 +1,5 @@
 .home {
-    background-image: url('../../images/textures/WF-Yellow-Paper-Texture.1.jpg');
+    /* background-image: url('../../images/textures/WF-Yellow-Paper-Texture.1.jpg'); */
     background-size: contain;
     background-position: top;
     background-repeat: repeat;
@@ -10,6 +10,23 @@
     align-items: center;
 }
 
+.black-rip {
+    width: 100%;
+    margin-top: -20%;
+}
+
+.home-landing-page {
+    height: calc(100vh - 35vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.drums-brewhouse {
+    width: 100%;
+}
+
 .hero-banner {
     display: flex;
     flex-direction: column;
@@ -18,21 +35,56 @@
 
 .hero-title {
     font-family: 'MADE Outer Sans Black';
-    font-size: 3em;
-    color: var(--main-white);
+    font-size: 2em;
+    color: var(--main-red);
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
-    text-shadow: 0 5px 5px rgb(70, 70, 70);
+    /* text-shadow: 0 5px 5px rgb(70, 70, 70); */
+    text-shadow: 0 0 5px rgb(189, 0, 0, 0.5);
+}
+
+.button.hero-button {
+    color: var(--main-red) ;
+    border-color: var(--main-red);
+}
+
+.landing-image {
+    width: 90%;
+    height: fit-content;
+}
+
+.landing-image img {
+    width: 100%;
 }
 
 .hero-image {
     width: 100%;
-    height: fit-content;
 }
 
 .hero-image img {
+    width: 100%;
+}
+
+.red-transition {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    z-index: 1;
+}
+
+.red-transition img {
+    width: 130%;
+}
+
+.home-about-us-title {
+    font-family: 'MADE Outer Sans Black';
+    font-size: 3em;
+    color: var(--main-white);
+    position: absolute;
+    align-self: center;
+    text-align: center;
     width: 100%;
 }
 
@@ -53,19 +105,17 @@
 .home-about-us {
     width: 100%;
     height: fit-content;
-    background-image: url('../../images/textures/WF-Flat-Paper-Texture.1.jpg');
+    /* background-image: url('../../images/textures/WF-Flat-Paper-Texture.1.jpg'); */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5em;
-    padding-top: 10em;
-    padding-bottom: 12em;
+    margin-top: -20%;
 }
 
-.home-about-us-title, .listen-title, .contact-title {
+.listen-title, .contact-title {
     font-family: 'MADE Outer Sans Black';
     font-size: 3em;
     color: var(--main-yellow);
@@ -74,6 +124,7 @@
 
 .home-about-us-img-p {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
@@ -85,8 +136,7 @@
 }
 
 .home-about-us-paragraph {
-    margin: 4em 0;
-    width: 50%;
+    width: 90%;
     color: var(--main-white);
     font-family: 'MADE Outer Sans Light';
     display: flex;
@@ -100,7 +150,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 10em;
 }
 
 .listen-title {

@@ -16,3 +16,13 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+#root {
+  width: 100vw;
+  height: fit-content;
+  overflow-x: hidden;
+}
+
+* {
+  background-color: transparent;
+}

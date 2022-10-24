@@ -1,31 +1,18 @@
 .song {
     width: 60%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1fr 1fr 6fr;
-    grid-template-areas: 
-                    "image title"
-                    "image date"
-                    "image player";
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 1em 0;
+    justify-content: center;
+    gap: 1em;
+    font-family: 'MADE Outer Sans Light';
+    color: var(--main-white)
 }
 
 .song-artwork {
-    grid-area: image;
     width: 200px;
 }
-
-.song-name {
-    grid-area: title;
-    font-family: 'MADE Outer Sans Light';
-}
-
 .player {
-    grid-area: player;
-}
-
-.release-date {
-    grid-area: date;
-    font-family: 'MADE Outer Sans Light';
+    width: 80%;
+    height: 20px;
 }

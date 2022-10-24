@@ -14,18 +14,18 @@ const Footer = () => {
           <button type='submit' className='subscribe-submit'>SUBMIT</button>
         </form>
         <div className='footer-socials'>
-        <a href='https://www.instagram.com/waterfrontofficial/' target='_blank' rel="noreferrer" >
-                    <FaInstagram size={size}/>
-                </a>
-                <a href='https://www.facebook.com/waterfrontbandofficial' target='_blank' rel="noreferrer" >
-                    <FaFacebook size={size} />
-                </a>
-                <a href='https://twitter.com/WFofficialband' target='_blank' rel="noreferrer" >
-                    <FaTwitter size={size} />
-                </a>
-                <a href='https://www.youtube.com/channel/UCPLUW_woeKR81y2ORqJIcXg' target='_blank' rel="noreferrer" >
-                    <FaYoutube size={size} />
-                </a>
+          <a href='https://www.instagram.com/waterfrontofficial/' target='_blank' rel="noreferrer" >
+              <FaInstagram size={size}/>
+          </a>
+          <a href='https://www.facebook.com/waterfrontbandofficial' target='_blank' rel="noreferrer" >
+              <FaFacebook size={size} />
+          </a>
+          <a href='https://twitter.com/WFofficialband' target='_blank' rel="noreferrer" >
+              <FaTwitter size={size} />
+          </a>
+          <a href='https://www.youtube.com/channel/UCPLUW_woeKR81y2ORqJIcXg' target='_blank' rel="noreferrer" >
+              <FaYoutube size={size} />
+          </a>
         </div>
       </div>
   )

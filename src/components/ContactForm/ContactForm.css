@@ -1,6 +1,6 @@
 .contact {
     width: 100%;
-    background-image: url('../../images/textures/WF-Flat-Paper-Texture.1.jpg');
+    /* background-image: url('../../images/textures/WF-Flat-Paper-Texture.1.jpg'); */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -20,28 +20,27 @@
     flex-direction: column;
     gap: 1em;
     font-family: 'MADE Outer Sans Thin';
-    color: var(--main-yellow);
+    color: var(--main-white);
     width: 60%;
-    margin-bottom: 20em;
 }
 
 .contact-form input, .contact-form textarea {
     background-color: transparent;
     color: var(--main-yellow);
-    border: 1px solid var(--main-yellow);
+    border: 1px solid var(--main-white);
     padding: 1em;
 }
 
 .contact-form input::placeholder, .contact-form textarea::placeholder {
-    color: var(--main-yellow);
+    color: var(--main-white);
     font-family: 'MADE Outer Sans Thin';
 }
 
 .contact-submit {
-    color: var(--main-yellow);
+    color: var(--main-white);
     margin: 1em;
     padding: 1em;
-    border: 1px solid var(--main-yellow);
+    border: 1px solid var(--main-white);
     border-radius: 20px;
     font-family: 'MADE Outer Sans Thin';
     width: fit-content;

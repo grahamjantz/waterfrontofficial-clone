@@ -1,36 +1,90 @@
 .header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-image: url('../../images/textures/WF-Yellow-Paper-Texture.1.jpg');
-    background-position: bottom;
+    justify-content: space-between;
+    background-color: transparent;
+    background-image: url('../../images/photos/drumsBrewhouse.1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 320px;
-    width: 100vw;
+    height: fit-content;
+    height: 35vh;
+    width: 100%;
+    padding-top: 20px;
 }
 
-.wf-black-logo {
-    width: 30em;
+.black-header-rip {
+    width: 150%;
+    margin-top: -25%;
+}
+
+.wf-red-logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
 }
 .wf-black-logo:hover {
     cursor: pointer;
 }
 
+.nav-menu {
+    top: 30px;
+    right: 20px;
+    height: 30px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+.nav-menu > span {
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+
 .nav {
+    background-image: url('../../images/textures/blackTexture.3.jpg');
+    background-size: 100%;
+    background-repeat: repeat;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    gap: 2em;
+    position: absolute;
+    transition: 1s;
+    box-shadow: 0 0 5px var(--main-red);
+}
+
+.nav-menu > span.active:first-of-type {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.nav-menu > span.active:nth-of-type(2) {
+    transform: scaleX(0);
+}
+
+.nav-menu > span.active:last-of-type {
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 .navbar {
     list-style: none;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
     width: 100%;
     justify-content: space-around;
 }
 
 .navbar a {
     text-decoration: none;
-    color: var(--main-black);
+    color: var(--main-red);
     padding: 1em;
     font-family: 'MADE Outer Sans Black';
 }
@@ -45,18 +99,21 @@
 
 .subnav {
     align-self: flex-end;
-    margin-right: 2em;
     display: flex;
-    width: 50%;
-    justify-content: flex-end;
-    gap: 2em;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 3em;
 }
 
 .subnav a {
-    color: var(--main-black);
+    color: var(--main-red);
 }
 .subnav a:hover {
     color: var(--main-white);
+}
+
+.subnav a:active {
+    color: var(--main-red);
 }
 
 /*
@@ -65,6 +122,7 @@
 button {
     background-color: transparent;
     border: none;
+    color: var(--main-red);
 }
 
 button:hover {
@@ -73,3 +131,7 @@ button:hover {
 }
 
 /*------------------------------*/
+
+@media only screen and (min-width: 750px) {
+    
+}
