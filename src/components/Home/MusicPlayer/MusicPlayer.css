@@ -7,3 +7,9 @@
     width: 100%;
     height: fit-content;
 }
+
+@media only screen and (min-width: 750px) {
+    .music-player {
+        flex-direction: row;
+    }
+}

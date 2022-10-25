@@ -10,7 +10,7 @@ import Home from './components/Home/Home'
 // import Epk from './components/Epk/Epk'
 import Footer from './components/Footer/Footer'
 import ComingSoon from './components/ComingSoon/ComingSoon'
-// import About from './components/About/About';
+// import About from './co  mponents/About/About';
 
 export const ranNum = () => {
   return Math.floor(Math.random() * 10000);

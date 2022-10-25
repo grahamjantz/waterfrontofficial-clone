@@ -10,9 +10,15 @@
 }
 
 .song-artwork {
-    width: 200px;
+    width: 80%;
 }
 .player {
     width: 80%;
     height: 20px;
 }
+
+/* @media only screen and (min-width: 750px) {
+    .song-artwork {
+        width: 100%;
+    }
+} */

@@ -26,7 +26,7 @@
 
 .contact-form input, .contact-form textarea {
     background-color: transparent;
-    color: var(--main-yellow);
+    color: var(--main-white);
     border: 1px solid var(--main-white);
     padding: 1em;
 }
@@ -48,6 +48,6 @@
 }
 
 .contact-submit:hover {
-    background-color: var(--main-yellow);
+    background-color: var(--main-white);
     color: var(--main-black)
 }

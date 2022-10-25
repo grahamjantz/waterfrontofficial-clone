@@ -7,7 +7,7 @@ const size = 35;
 const Footer = () => {
   return (
     <div className='footer'>
-        <h4 className='footer-title'>Subscribe Form</h4>
+        <h4 className='footer-title'>Subscribe</h4>
         <form className='subscribe-form'>
           <label htmlFor='email'>Email *</label>
           <input id='email' name='email' type='email' placeholder='Enter Your Email' required></input>

@@ -5,7 +5,7 @@
     background-image: url('../../images/photos/drumsBrewhouse.1.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     height: fit-content;
     height: 35vh;
     width: 100%;
@@ -130,8 +130,73 @@ button:hover {
     color: var(--main-white);
 }
 
+.arrow {
+    display: none;
+    animation: bounce 1s infinite alternate;
+    animation-play-state: running;
+}
+
+.header-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes bounce {
+    0% {
+        top: -80px;
+    }
+    100% {
+        top: -50px;
+    }
+}
+
 /*------------------------------*/
 
-@media only screen and (min-width: 750px) {
-    
+@media only screen and (min-width: 1000px) {
+    .navbar {
+        flex-direction: row;
+    }
+    .nav {
+        top: 0 !important;
+        box-shadow: none;
+        position: static;
+        height: fit-content;
+        background-image: url('../../images/textures/blackRipTransition.2.png');
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .wf-red-logo {
+        display: none;
+    }
+    .header {
+        padding: 0; 
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+    .subnav {
+        width: 30%;
+    }
+    .black-header-rip {
+        width: 100%;
+        position: relative;
+    }
+    .arrow {
+        display: block;
+        color: red;
+        z-index: 10;
+        position: relative;
+        top: -80px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav {
+        background-position: 0 -50px;
+    }
 }

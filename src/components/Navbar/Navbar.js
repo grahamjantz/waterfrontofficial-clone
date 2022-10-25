@@ -4,7 +4,7 @@ import './Navbar.css'
 // import wfBlackLogo from '../../images/textures/RA/waterfront-red-logo.1.png'
 import wfRedLogo from '../../images/textures/RA/wf-logo.1.png'
 import blackRip from '../../images/textures/blackRipTransition.1.png'
-import { FaInstagram, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaAngleDown } from "react-icons/fa";
 // import { BiLogInCircle } from "react-icons/bi";
 // FaShoppingCart <-- putback in import from font awesome when you need shopping cart icon
 
@@ -109,8 +109,12 @@ const Navbar = () => {
                 </button> */}
             </div>
             </nav>
+            {/* <img src={blackRip} alt='' className='black-header-rip1'/> */}
         </div>
+        <div className='header-footer'>
+            <FaAngleDown className='arrow' size={50}/>
             <img src={blackRip} alt='' className='black-header-rip'/>
+        </div>
         </>
     )
 }

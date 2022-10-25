@@ -13,6 +13,7 @@ import threeYearsLater from '../../audio/Three-Years-Later-Master.wav'
 import worthFightingFor from '../../audio/Worth-Fighting-For-Master.wav'
 import MusicPlayer from './MusicPlayer/MusicPlayer'
 import ContactForm from '../ContactForm/ContactForm'
+import redAllianceVideo from '../../images/video/redAllianceVideo.mp4'
 
 const Home = () => {
   return (
@@ -21,20 +22,27 @@ const Home = () => {
         {/* <div className='landing-image'>
           <img src={redAllianceArtwork} alt=''/>
         </div> */}
-        <div className='hero-banner'>
-          <h1 className='hero-title'>RED ALLIANCE<br/>OUT NOW!</h1>
-          <Button 
-            className='hero-button' 
-            text='LISTEN'
-            href='https://open.spotify.com/track/4jU3FJ7OQdNTR8VQ8j3TKW'  
-          />
+        <div className='banner'>
+            <video src={redAllianceVideo} muted autoPlay controls={false} className='ra-video' playsInline loop></video>
+          <div className='hero-banner'>
+            <h1 className='hero-title'>RED ALLIANCE<br/>OUT NOW!</h1>
+            <Button 
+              className='hero-button' 
+              text='LISTEN'
+              href='https://open.spotify.com/track/4jU3FJ7OQdNTR8VQ8j3TKW'  
+            />
+          </div>
         </div>
         {/* <img src={drumsBrewhouse} alt='' className='drums-brewhouse'/> */}
         <div className='hero-image'>
           <img src={heroImage} alt=''/>
         </div>
       </div>
-          <h1 className='hero-title' style={{color: 'white', paddingTop: '2em'}}>NEW RELEASES</h1>
+      <div className='red-transition'>
+        <h3 className='home-about-us-title'>NEW RELEASES</h3>
+        <img src={redTransition} alt='' />
+      </div>
+          {/* <h1 className='hero-title' style={{color: 'white', paddingTop: '2em'}}>NEW RELEASES</h1> */}
       <div className='new-releases'>
         <NewRelease
           title='WORTH FIGHTING FOR'
