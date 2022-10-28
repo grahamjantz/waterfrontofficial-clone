@@ -9,6 +9,7 @@ const Footer = () => {
     <div className='footer'>
         <h4 className='footer-title'>Subscribe</h4>
         <form className='subscribe-form'>
+        <input type="hidden" name="form-name" value="subscribe" />
           <label htmlFor='email'>Email *</label>
           <input id='email' name='email' type='email' placeholder='Enter Your Email' required></input>
           <button type='submit' className='subscribe-submit'>SUBMIT</button>

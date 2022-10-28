@@ -4,27 +4,45 @@ import './About.css'
 import PressLinks from './PressLinks/PressLinks'
 import VideoPlayer from './VideoPlayer/VideoPlayer'
 
+import blackTransitionUp from '../../images/textures/blackRipTransition.1.png'
+import blackTransitionDown from '../../images/textures/blackRipTransitionDown.2.png'
+import redTransition from '../../images/textures/redTransition.1.png'
+import liveAtOwl from '../../images/photos/liveAtTheOwl_Resize.jpg'
+
 const About = () => {
   return (
     <div className='about'>
       <div className='about-us'>
+      <div className='about-us-title-container'>
         <h3 className='about-us-title'>ABOUT US</h3>
-        <p className='about-us-paragraph'>Waterfront is a alternative rock band based in southern Alberta. The Canadian group travelled to Vancouver in the summer of 2020 to transform themselves in collaboration with The Renaissance Music. Their forthcoming debut EP, New Heights, will be the first of two projects throughout 2021 and 2022.</p>
-        <p className='about-us-paragraph'>Playing together since 2019, Waterfront’s lineup consists of Dan Sequeira on vocals, Ryan Ross and Devin Taylor on guitars, Tanner Cyr on bass, and Graham Jantz on drums. All members are current students/alumni of the University of Lethbridge music department. Waterfront is eager to bring their high energy songs and heartfelt lyrics back to their communities as performance opportunities return. </p>
-        <p className='about-us-paragraph-subheading'>'New Heights' EP</p>
-        <p className='about-us-paragraph'>Summer 2020 saw Waterfront take the global pandemic as an opportunity to reinvent themselves by travelling to Vancouver, BC to create their debut EP, New Heights. The group rose to the occasion delivering four singles described as: "in your face, unapologetic, and rich in sonic turbulence” by BuzzMusic. This project was in collaboration with The Renaissance Music; the creative minds behind Vancouver’s rock outfit The Faceplants. The EP is out now on all major streaming services!  </p>
-        <p className='about-us-paragraph-subheading'>Beyond New Heights</p>
-        <p className='about-us-paragraph'>
-        Waterfront has already returned to Vancouver collaborating with The Renaissance productions once more since unveiling their new image and announcing the New Heights EP. This endeavour resulted in another a sophisticated step forward for the group which will bring an onslaught of new original material to their audience following New Heights in 2022. Follow Waterfront’s social media to stay updated with their future releases.
-        </p>
+        <img src={blackTransitionDown} alt='' className='black-rip-transition-down'/>
+      </div>
+      <img src={liveAtOwl} alt='' className='about-us-hero-image'/>
+      <img src={blackTransitionUp} alt='' className='black-rip-tranisition-up'/>
+      <p className='about-us-paragraph'>
+        Waterfront came together as music students from the University of Lethbridge in 2019. After developing local roots in Rock throughout their initial years, Waterfront expanded their Canadian footprint with the 2021 release of their debut EP, <em>'New Heights'</em>, where they partnered with Vancouver based producing team, THE RENAISSANCE.
+      </p>
+      <p className='about-us-paragraph'>
+        The same collaboration will see Waterfront release their sophomore EP entitled <em>'Fever Dream'</em> in this Winter. The latest singles <em>Red Alliance</em>, <em>Three Years Later</em>, and <em>Worth Fighting For</em>, and their debut EP <em>New Heights</em> can be heard now.
+      </p>
       </div>
       <div className='press-links-section'>
+      <div className='red-transition'>
         <h3 className='press-links-title'>PRESS LINKS</h3>
+        <img src={redTransition} alt='' />
+      </div>
         <PressLinks />
       </div>
       <div className='video-section'>
+      <div className='red-transition'>
         <h3 className='video-title'>VIDEO</h3>
+        <img src={redTransition} alt='' />
+      </div>
         <VideoPlayer />
+      </div>
+      <div className='red-transition'>
+        <h3 className='about-contact-title'>CONTACT</h3>
+        <img src={redTransition} alt='' />
       </div>
       <ContactForm />
     </div>

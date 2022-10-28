@@ -5,6 +5,7 @@ const ContactForm = () => {
   return (
     <div className='contact'>
         <form className='contact-form'>
+          <input type="hidden" name="form-name" value="contact" />
           <label htmlFor='name'>Name *</label>
           <input id='name' name='name' type='text' placeholder='Enter Your Name' required></input>
           <label htmlFor='email'>Email *</label>

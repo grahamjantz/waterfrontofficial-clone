@@ -10,12 +10,12 @@ const pressArray = [
         source: 'BuzzMusic',
         href: 'https://www.buzz-music.com/post/waterfront-haunts-our-days-with-their-heated-music-video-wedding-at-my-funeral',
     },
-    {
-        title: 'Video Premiere: Waterfront - "Wedding at My Funeral"',
-        imageSrc: '',
-        source: 'New Noise Magazine',
-        href: 'https://newnoisemagazine.com/video-premiere-waterfront-wedding-at-my-funeral/',
-    },
+    // {
+    //     title: 'Video Premiere: Waterfront - "Wedding at My Funeral"',
+    //     imageSrc: '',
+    //     source: 'New Noise Magazine',
+    //     href: 'https://newnoisemagazine.com/video-premiere-waterfront-wedding-at-my-funeral/',
+    // },
     {
         title: 'Waterfront Drops a Heartfelt Single, "I Don\'t Want to Do This Anymore"',
         imageSrc: '',
@@ -34,12 +34,12 @@ const pressArray = [
         source: 'BuzzMusic',
         href: 'https://www.buzz-music.com/post/waterfront-shakes-your-core-with-backbreaker',
     },
-    {
-        title: 'New Heights',
-        imageSrc: '',
-        source: 'Ghost Killer Entertainment',
-        href: 'https://www.youtube.com/watch?v=cPxfyBfm0xI',
-    },
+    // {
+    //     title: 'New Heights',
+    //     imageSrc: '',
+    //     source: 'Ghost Killer Entertainment',
+    //     href: 'https://www.youtube.com/watch?v=cPxfyBfm0xI',
+    // },
 ];
 
 const PressLinks = () => {

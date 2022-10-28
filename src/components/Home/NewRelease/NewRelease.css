@@ -12,11 +12,11 @@
 
 .new-release-cover {
     grid-area: image;
-    width: 300px;
+    width: 80%;
 }
 
 .new-release-title {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .new-release-subtitle {

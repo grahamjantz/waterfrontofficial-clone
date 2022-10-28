@@ -1,7 +1,8 @@
 import React from 'react'
+import ImageGallery from 'react-image-video-gallery'
 import './VideoPlayer.css'
 // import ReactPlayer from 'react-player/lazy'
-// import { ranNum } from '../../../App'
+// import ranNum from '../../../App'
 
 const videoArray = [
     {
@@ -26,22 +27,40 @@ const videoArray = [
     }
 ]
 
+const items =[
+    {
+        original: 'https://www.youtube.com/embed/VYkZ10ZP1po'
+    },
+    {
+        original: 'https://www.youtube.com/embed/VxiWp55nPug'
+    },
+    {
+        original: 'https://www.youtube.com/embed/gxckdsWirGM'
+    },
+    {
+        original: 'https://www.youtube.com/embed/kfeRaE_j7lc'
+    },
+]
+
 const VideoPlayer = () => {
     return (
         <div className='video-player'>
-            {
+            <ImageGallery items={items} />
+            {/* {
                 videoArray.map((video) => {
                     return (
-                        video.title
+                        <p key={video.src} style={{color: 'white'}}>
+                            {video.title}
+                        </p>
                     )
-                    // return (
-                    //     <iframe width="560" height="315" src={video.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen key={ranNum()}></iframe>
-                    // )
-                    // return (
-                    //     <ReactPlayer key={ranNum()}url={video.src}/>
-                    // )
+                    return (
+                        <iframe width="560" height="200" src={video.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen key={video.src}></iframe>
+                    )
+                    return (
+                        <ReactPlayer key={ranNum()}url={video.src}/>
+                    )
                 })
-            }
+            } */}
         </div>
     )
 }

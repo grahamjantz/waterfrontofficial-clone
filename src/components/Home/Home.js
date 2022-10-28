@@ -37,8 +37,9 @@ const Home = () => {
         <div className='hero-image'>
           <img src={heroImage} alt=''/>
         </div>
+        <video src={redAllianceVideo} muted autoPlay controls={false} className='ra-video-mobile' playsInline loop></video>
       </div>
-      <div className='red-transition'>
+      <div className='red-transition new-releases-heading'>
         <h3 className='home-about-us-title'>NEW RELEASES</h3>
         <img src={redTransition} alt='' />
       </div>
@@ -48,13 +49,13 @@ const Home = () => {
           title='WORTH FIGHTING FOR'
           imgSrc={wffCover}
           subtitle='OUT NOW!'
-          description='OFFICIAL MUSIC VIDEO PREMIERING VIA NEW NOISE MAGAZINE STREAM IT NOW!'
+          description='OFFICIAL MUSIC VIDEO PREMIERING VIA NEW NOISE MAGAZINE!'
         />
         <NewRelease 
           title='THREE YEARS LATER'
           imgSrc={tylCover}
           subtitle='OUT NOW!'
-          description='OFFICIAL MUSIC VIDEO PREMIERING VIA NEW NOISE MAGAZINE STREAM IT NOW!'
+          description='OFFICIAL MUSIC VIDEO PREMIERING VIA NEW NOISE MAGAZINE!'
         />
         {/* <div className='merch-highlights'>
         <MerchHighlight
@@ -90,7 +91,7 @@ const Home = () => {
           <p>
             The same collaboration will see Waterfront release their sophomore EP entitled <em>'Fever Dream'</em> in this Winter.  The latest singles <em>Red Alliance</em>, <em>Three Years Later</em>, and <em>Worth Fighting For</em>, and their debut EP <em>New Heights</em> can be heard now.
           </p>
-        </div>z 
+        </div> 
       </div>
       <div className='red-transition'>
         <h3 className='home-about-us-title'>LISTEN</h3>

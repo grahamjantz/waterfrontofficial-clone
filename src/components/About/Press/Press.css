@@ -1,15 +1,15 @@
 .press {
     border-radius: 50px;
-    background-image: url('../../../images/textures/WF-Midroll-Paper-Texture.1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../../../images/textures/blackTexture.3.jpg');
+    background-size: 100%;
+    background-repeat: repeat;
     color: white;
     height: 500px;
-    width: 300px;
-    display: grid;
-    grid-template-rows: 6fr 2fr 1fr 1fr;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
     margin: 0.5em;
-    padding: 2em 1em;
+    padding: 2em 1em 0 1em;
     align-items: center;
     gap: 1em;
     text-align: center;
@@ -32,11 +32,12 @@
 
 .press-button {
     justify-self: center;
-    background-color: var(--main-yellow);
+    background-color: var(--main-red);
+    border: 1px solid var(--main-red);
 }
 
 .press-button:hover {
     background-color: transparent;
-    color: var(--main-yellow);
-    border: 1px solid var(--main-yellow);
+    color: var(--main-red);
+    border: 1px solid var(--main-red);
 }

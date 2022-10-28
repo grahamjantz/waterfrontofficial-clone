@@ -27,6 +27,29 @@
     <title id='title'>Waterfront | Official</title>
   </head>
   <body>
+    <form 
+      className='contact-form'
+      name="contact" 
+      netlify 
+      netlify-honeypot="bot-field" 
+      hidden
+    >
+      <input id='name' name='name' type='text' placeholder='Enter Your Name' required></input>
+      <input id='email' name='email' type='email' placeholder='Enter Your Email' required></input>
+      <input id='subject' name='subject' type='text' placeholder='Enter Your Subject' required></input>
+      <textarea id='message' name='message' placeholder='Enter Your Message' rows='10'></textarea>
+      <button type='submit' className='contact-submit'>SUBMIT</button>
+    </form>
+    <form 
+      className='subscribe-form'
+      name="subscribe" 
+      netlify 
+      netlify-honeypot="bot-field" 
+      hidden
+    >
+      <input id='email' name='email' type='email' placeholder='Enter Your Email' required></input>
+      <button type='submit' className='subscribe-submit'>SUBMIT</button>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

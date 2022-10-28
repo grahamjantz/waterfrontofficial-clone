@@ -163,7 +163,7 @@ button:hover {
         box-shadow: none;
         position: static;
         height: fit-content;
-        background-image: url('../../images/textures/blackRipTransition.2.png');
+        background-image: url('../../images/textures/blackRipTransitionDown.2.png');
         background-repeat: no-repeat;
         height: 400px;
     }

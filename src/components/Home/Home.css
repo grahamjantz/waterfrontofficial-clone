@@ -16,7 +16,8 @@
 }
 
 .home-landing-page {
-    height: calc(100vh - 35vh);
+    /* height: calc(100vh - 35vh); */
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +77,12 @@
     width: 100%;
     margin-top: 2em;
     display: flex;
+    position: static;
     z-index: 1;
+}
+
+.new-releases-heading {
+    margin-top: -50px;
 }
 
 .red-transition img {
@@ -95,6 +101,11 @@
 
 .ra-video {
     display: none;
+}
+
+.ra-video-mobile {
+    width: 100%;
+    margin-top: -30px;
 }
 
 .home-black-header-rip {
@@ -192,6 +203,9 @@
         width: 100vw;
         z-index: 0;
     }
+    .ra-video-mobile {
+        display: none;
+    }
     .home-black-header-rip {
         display: block;
         margin-top: -300px;
@@ -218,6 +232,9 @@
     .red-transition img {
         width: 100%;
     }
+    .new-releases-heading {
+        margin-top: 0;
+    } 
     .home-about-us-paragraph {
         width: 50%;
         font-size: 1.3em;
