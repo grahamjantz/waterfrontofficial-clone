@@ -2,7 +2,7 @@ import React from 'react'
 import ContactForm from '../ContactForm/ContactForm'
 import './About.css'
 import PressLinks from './PressLinks/PressLinks'
-import VideoPlayer from './VideoPlayer/VideoPlayer'
+// import VideoPlayer from './VideoPlayer/VideoPlayer'
 
 import blackTransitionUp from '../../images/textures/blackRipTransition.1.png'
 import blackTransitionDown from '../../images/textures/blackRipTransitionDown.2.png'
@@ -27,19 +27,19 @@ const About = () => {
       </p>
       </div>
       <div className='press-links-section'>
-      <div className='red-transition'>
-        <h3 className='press-links-title'>PRESS LINKS</h3>
-        <img src={redTransition} alt='' />
-      </div>
+        <div className='red-transition'>
+          <h3 className='press-links-title'>PRESS LINKS</h3>
+          <img src={redTransition} alt='' />
+        </div>
         <PressLinks />
       </div>
-      <div className='video-section'>
-      <div className='red-transition'>
-        <h3 className='video-title'>VIDEO</h3>
-        <img src={redTransition} alt='' />
-      </div>
+      {/* <div className='video-section'>
+        <div className='red-transition'>
+          <h3 className='video-title'>VIDEO</h3>
+          <img src={redTransition} alt='' />
+        </div>
         <VideoPlayer />
-      </div>
+      </div> */}
       <div className='red-transition'>
         <h3 className='about-contact-title'>CONTACT</h3>
         <img src={redTransition} alt='' />
