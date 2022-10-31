@@ -35,9 +35,9 @@ const Home = () => {
         </div>
         {/* <img src={drumsBrewhouse} alt='' className='drums-brewhouse'/> */}
         <div className='hero-image'>
-          <img src={heroImage} alt=''/>
+          <img src={heroImage} alt='' loading='lazy'/>
         </div>
-        <video src={redAllianceVideo} muted autoPlay controls={false} className='ra-video-mobile' playsInline loop></video>
+        <video src={redAllianceVideo} muted autoPlay controls={false} className='ra-video-mobile' playsInline loop loading='lazy'></video>
       </div>
       <div className='red-transition new-releases-heading'>
         <h3 className='home-about-us-title'>NEW RELEASES</h3>
