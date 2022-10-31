@@ -6,7 +6,7 @@ import Home from './components/Home/Home'
 // import About from './components/About/About'
 // import Listen from './components/Listen/Listen'
 // import WhatsNext from './components/WhatsNext/WhatsNext'
-// import Press from './components/Press/Press'
+import PressPage from './components/PressPage/PressPage'
 // import Epk from './components/Epk/Epk'
 import Footer from './components/Footer/Footer'
 import ComingSoon from './components/ComingSoon/ComingSoon'
@@ -27,7 +27,7 @@ function App() {
           <Route path='/about' element={<About />}></Route>
           <Route path='/listen' element={<ComingSoon />}></Route>
           <Route path='/whats-next' element={<ComingSoon />}></Route>
-          <Route path='/press' element={<ComingSoon />}> </Route>
+          <Route path='/press' element={<PressPage />}> </Route>
           <Route path='/epk' element={<ComingSoon />}></Route>
         </Routes>
         <Footer />
