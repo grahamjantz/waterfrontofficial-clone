@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom'
+import * as Scroll from 'react-scroll';
+import { Link as RSLink } from 'react-scroll'
+
 import './Navbar.css'
 // import wfBlackLogo from '../../images/textures/RA/waterfront-red-logo.1.png'
 import wfRedLogo from '../../images/textures/RA/wf-logo.1.png'
@@ -16,58 +19,125 @@ const navArr = [
     {
         id: ranNum(),
         text: 'HOME',
-        path: '/home'
+        path: '/home',
+        offset: 0,
     },
     // {
     //     id: ranNum(),
     //     text: 'MERCH',
-    //     path: '/merch'
+    //     path: '/merch',
+    //     offset: 0,
     // },
     {
         id: ranNum(),
         text: 'ABOUT',
-        path: '/about'
+        path: '/about',
+        offset: 0,
     },
     {
         id: ranNum(),
         text: 'LISTEN',
-        path: '/listen'
+        path: '/listen',
+        offset: 0,
     },
     {
         id: ranNum(),
         text: 'WHAT\'S NEXT',
-        path: '/whats-next'
+        path: '/whats-next',
+        offset: 0,
     },
     {
         id: ranNum(),
         text: 'PRESS',
-        path: '/press'
+        path: '/press',
+        offset: 0,
     },
     {
         id: ranNum(),
         text: 'EPK',
-        path: '/epk'
+        path: '/epk',
+        offset: 0,
     },
 ]
 
 
 const size = 25;
 
-const Navbar = () => {
-    
+const Navbar = () => {    
+
     const [navTop, setNavTop] = useState('-500px')
     const [navMenuClass, setNavMenuClass] = useState('inactive')
+
+    const path = useLocation().pathname;
+    const location = path.split('/')[1];
+    const navigate = useNavigate();
+    const scroller = Scroll.scroller;
+
     const handleClick = () => {
         navTop === '-500px' ? setNavTop('0px') : setNavTop('-500px')
         navMenuClass === 'inactive' ? setNavMenuClass('active') : setNavMenuClass('inactive')
     }
 
+
+  const scrollToAnchor = () => {
+    scroller.scrollTo('anchor', {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      offset: 50
+    });
+  };
+
+  const goToPageAndScroll = async (page, anchor) => {
+    await closeMobile();
+    await navigate(page);
+    await scroller.scrollTo(anchor, {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      offset: 50
+    });
+  };
+
+  const closeMobile = () => {};
+
     const navMap = navArr.map((item) => {
         return (
             <li key={item.id}>
-                <NavLink to={`${item.path}`} className='nav-btn' onClick={handleClick}>
-                    {item.text}
-                </NavLink>
+                {location === item.path ? (
+                    <button
+                        className='nav-btn rs-link'
+                        to={`${item.text}`} 
+                        spy={true} 
+                        smooth={true} 
+                        offset={item.offset} 
+                        duration={500}
+                        activeClass='active'
+                        onClick={goToPageAndScroll(item.path, item.text)}
+                    >
+                        {item.text}
+                    </button>
+                ) : (
+                    <NavLink 
+                        to={`${item.path}`} 
+                        className='nav-btn' 
+                        onClick={handleClick}
+                    >
+                        {item.text}
+                    </NavLink>
+                )}
+                {/* <RSLink
+                    to={`${item.text}`} 
+                    spy={true} 
+                    smooth={true} 
+                    offset={item.offset} 
+                    duration={500}
+                    activeClass='active'
+                >
+                    <NavLink to={`${item.path}`} className='nav-btn' onClick={handleClick}>
+                        {item.text}
+                    </NavLink>
+                </RSLink> */}
             </li>
         )
     })
