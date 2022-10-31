@@ -1,12 +1,18 @@
 import React from 'react'
 import './PressLinks.css'
 import Press from '../Press/Press'
+
+
 import {ranNum} from '../../../App'
+import raGroup from '../../../images/photos/RA.jpg'
+import groupShot1 from '../../../images/photos/groupShot.1.jpg'
+import groupShot5 from '../../../images/photos/groupShot5.JPG'
+import devinShadow from '../../../images/photos/devinShadow.JPG'
 
 const pressArray = [
     {
         title: 'Waterfront Haunts Our Days With Their Heated Music Video, "Wedding At My Funeral"',
-        imageSrc: '',
+        imageSrc: raGroup,
         source: 'BuzzMusic',
         href: 'https://www.buzz-music.com/post/waterfront-haunts-our-days-with-their-heated-music-video-wedding-at-my-funeral',
     },
@@ -18,19 +24,19 @@ const pressArray = [
     // },
     {
         title: 'Waterfront Drops a Heartfelt Single, "I Don\'t Want to Do This Anymore"',
-        imageSrc: '',
+        imageSrc: groupShot1,
         source: 'BuzzMusic',
         href: 'https://www.buzz-music.com/post/waterfront-drops-a-heartfelt-single-i-don-t-want-to-do-this-anymore',
     },
     {
         title: 'Conquer "New Heights" With Waterfront\'s Charismatic New Release',
-        imageSrc: '',
+        imageSrc: groupShot5,
         source: 'BuzzMusic',
         href: 'https://www.buzz-music.com/post/conquer-new-heights-with-waterfront-s-charismatic-new-release',
     },
     {
         title: 'Waterfront Shakes Your Core With "Backbreaker"',
-        imageSrc: '',
+        imageSrc: devinShadow,
         source: 'BuzzMusic',
         href: 'https://www.buzz-music.com/post/waterfront-shakes-your-core-with-backbreaker',
     },
