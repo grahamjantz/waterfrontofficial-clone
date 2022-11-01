@@ -176,7 +176,7 @@ const Navbar = () => {
             </div>
             <div className='arrow-up' onClick={() => goBackToTop('header')}>
                 <FaAngleUp size={50}/>
-                <h4>Back To Top</h4>
+                <h4>Top</h4>
             </div>
         </>
     )
