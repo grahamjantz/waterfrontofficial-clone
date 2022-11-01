@@ -35,7 +35,7 @@ const Home = () => {
         </div>
         {/* <img src={drumsBrewhouse} alt='' className='drums-brewhouse'/> */}
         <div className='hero-image'>
-          <img src={heroImage} alt='' loading='lazy'/>
+          <img src={heroImage} alt='' />
         </div>
         <video src={redAllianceVideo} muted autoPlay controls={false} className='ra-video-mobile' playsInline loop loading='lazy'></video>
       </div>
