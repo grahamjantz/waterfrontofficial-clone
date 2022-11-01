@@ -1,4 +1,6 @@
 import React from 'react'
+import * as Scroll from 'react-scroll';
+
 import ContactForm from '../ContactForm/ContactForm'
 import './About.css'
 import PressLinks from './PressLinks/PressLinks'
@@ -9,9 +11,12 @@ import blackTransitionDown from '../../images/textures/blackRipTransitionDown.2.
 import redTransition from '../../images/textures/redTransition.1.png'
 import liveAtOwl from '../../images/photos/liveAtTheOwl_Resize.jpg'
 
-const About = () => {
+const About = ({ name }) => {
+
+  const Element = Scroll.Element;
+
   return (
-    <div className='about'>
+    <Element className='about' name={name}>
       <div className='about-us'>
       <div className='about-us-title-container'>
         <h3 className='about-us-title'>ABOUT US</h3>
@@ -45,7 +50,7 @@ const About = () => {
         <img src={redTransition} alt='' />
       </div>
       <ContactForm />
-    </div>
+    </Element>
   )
 }
 

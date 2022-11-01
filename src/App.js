@@ -22,13 +22,13 @@ function App() {
       <Navbar />
       <Routes>
           <Route index element={<Home />}/>
-          <Route path='/home' element={<Home />}></Route>
-          <Route path='/merch' element={<ComingSoon />}></Route>
-          <Route path='/about' element={<About />}></Route>
-          <Route path='/listen' element={<ComingSoon />}></Route>
-          <Route path='/whats-next' element={<ComingSoon />}></Route>
-          <Route path='/press' element={<PressPage />}> </Route>
-          <Route path='/epk' element={<ComingSoon />}></Route>
+          <Route path='/home' element={<Home mame='HOME'/>}></Route>
+          <Route path='/merch' element={<ComingSoon name='MERCH'/>}></Route>
+          <Route path='/about' element={<About name='ABOUT'/>}></Route>
+          <Route path='/listen' element={<ComingSoon name='LISTEN'/>}></Route>
+          <Route path='/whats-next' element={<ComingSoon name="WHAT'S NEXT"/>}></Route>
+          <Route path='/press' element={<PressPage name='PRESS'/>}> </Route>
+          <Route path='/epk' element={<ComingSoon name='EPK'/>}></Route>
         </Routes>
         <Footer />
     </div>
