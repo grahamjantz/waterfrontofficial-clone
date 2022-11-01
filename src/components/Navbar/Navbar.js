@@ -89,6 +89,15 @@ const Navbar = () => {
     handleClick();
   };
 
+  const goBackToTop = (anchor) => {
+    scroller.scrollTo(anchor, {
+        duration: 1000,
+        delay: 100,
+        smooth: true,
+        offset: 0
+    })
+  }
+
   const closeMobile = () => {};
 
   const renderDesktopNav = () => {
@@ -129,8 +138,8 @@ const Navbar = () => {
   }
 
     return (
-        <Element name='nav'>
-            <div className='header'>
+        <>
+            <Element name='header' className='header'>
                 <Link to='/home' style={{ display: 'flex', justifyContent: 'center'}}>
                     <img src={wfRedLogo} alt='waterfront black logo' className='wf-red-logo' />
                 </Link>
@@ -160,16 +169,16 @@ const Navbar = () => {
                     </a>
                 </div>
                 </nav>
-            </div>
+            </Element>
             <div className='header-footer'>
                 <FaAngleDown className='arrow' size={50}/>
                 <img src={blackRip} alt='' className='black-header-rip'/>
             </div>
-            <div className='arrow-up' onClick={() => goToPageAndScroll(location, 'nav')}>
+            <div className='arrow-up' onClick={() => goBackToTop('header')}>
                 <FaAngleUp size={50}/>
                 <h4>Back To Top</h4>
             </div>
-        </Element>
+        </>
     )
 }
 
