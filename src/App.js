@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home'
 // import Merch from './components/Merch/Merch'
 // import About from './components/About/About'
-// import Listen from './components/Listen/Listen'
+import Listen from './components/Listen/Listen'
 // import WhatsNext from './components/WhatsNext/WhatsNext'
 import PressPage from './components/PressPage/PressPage'
 // import Epk from './components/Epk/Epk'
@@ -25,7 +25,7 @@ function App() {
           <Route path='/home' element={<Home mame='HOME'/>}></Route>
           <Route path='/merch' element={<ComingSoon name='MERCH'/>}></Route>
           <Route path='/about' element={<About name='ABOUT'/>}></Route>
-          <Route path='/listen' element={<ComingSoon name='LISTEN'/>}></Route>
+          <Route path='/listen' element={<Listen name='LISTEN'/>}></Route>
           <Route path='/whats-next' element={<ComingSoon name="WHAT'S NEXT"/>}></Route>
           <Route path='/press' element={<PressPage name='PRESS'/>}> </Route>
           <Route path='/epk' element={<ComingSoon name='EPK'/>}></Route>

@@ -1,18 +1,22 @@
 import React from 'react'
 import './Home.css'
+
 import Button from '../Button/Button'
 import NewRelease from './NewRelease/NewRelease'
+import MusicPlayer from './MusicPlayer/MusicPlayer'
+import ContactForm from '../ContactForm/ContactForm'
+
 import heroImage from '../../images/textures/RA/Red-Alliance-Header.4.png'
 import wffCover from '../../images/artwork/wffArtwork.jpg'
 import tylCover from '../../images/artwork/3YLArtwork.jpg'
 import wfAtBrewhouse from '../../images/photos/wfAtBrewhouse.jpg'
 import redTransition from '../../images/textures/redTransition.1.png'
 import blackRip from '../../images/textures/blackRipTransition.1.png'
+
 import redAlliance from '../../audio/Red-Alliance-Master.wav'
 import threeYearsLater from '../../audio/Three-Years-Later-Master.wav'
 import worthFightingFor from '../../audio/Worth-Fighting-For-Master.wav'
-import MusicPlayer from './MusicPlayer/MusicPlayer'
-import ContactForm from '../ContactForm/ContactForm'
+
 import redAllianceVideo from '../../images/video/redAllianceVideo.mp4'
 
 const Home = () => {
