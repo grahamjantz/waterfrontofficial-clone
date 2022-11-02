@@ -136,6 +136,15 @@ const Navbar = () => {
         )
     })
   }
+  const scrollToContent = () => {
+    console.log(location)
+    scroller.scrollTo(location.toUpperCase(), {
+        duration: 1000,
+        delay: 100,
+        smooth: true,
+        offset: -20
+    })
+  }
 
     return (
         <>
@@ -171,7 +180,7 @@ const Navbar = () => {
                 </nav>
             </Element>
             <div className='header-footer'>
-                <FaAngleDown className='arrow' size={50}/>
+                <FaAngleDown className='arrow' size={50} onClick={scrollToContent}/>
                 <img src={blackRip} alt='' className='black-header-rip'/>
             </div>
             <div className='arrow-up' onClick={() => goBackToTop('header')}>

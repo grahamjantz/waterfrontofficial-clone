@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import * as Scroll from 'react-scroll';
 
 import Button from '../Button/Button'
 import NewRelease from './NewRelease/NewRelease'
@@ -19,9 +20,12 @@ import worthFightingFor from '../../audio/Worth-Fighting-For-Master.wav'
 
 import redAllianceVideo from '../../images/video/redAllianceVideo.mp4'
 
-const Home = () => {
+const Home = ({ name }) => {
+
+  const Element = Scroll.Element;
+
   return (
-    <div className='home'>
+    <Element className='home' name={name}>
       <div className='home-landing-page'>
         {/* <div className='landing-image'>
           <img src={redAllianceArtwork} alt=''/>
@@ -113,7 +117,7 @@ const Home = () => {
         <img src={redTransition} alt='' />
       </div>
       <ContactForm />
-    </div>
+    </Element>
   )
 }
 

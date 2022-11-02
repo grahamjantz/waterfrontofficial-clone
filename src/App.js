@@ -21,12 +21,12 @@ function App() {
     <div className='App'>
       <Navbar />
       <Routes>
-          <Route index element={<Home />}/>
-          <Route path='/home' element={<Home mame='HOME'/>}></Route>
+          <Route index element={<Home name='' />}/>
+          <Route path='/home' element={<Home name='HOME'/>}></Route>
           <Route path='/merch' element={<ComingSoon name='MERCH'/>}></Route>
           <Route path='/about' element={<About name='ABOUT'/>}></Route>
           <Route path='/listen' element={<Listen name='LISTEN'/>}></Route>
-          <Route path='/whats-next' element={<ComingSoon name="WHAT'S NEXT"/>}></Route>
+          <Route path='/whats-next' element={<ComingSoon name="WHATS-NEXT"/>}></Route>
           <Route path='/press' element={<PressPage name='PRESS'/>}> </Route>
           <Route path='/epk' element={<ComingSoon name='EPK'/>}></Route>
         </Routes>

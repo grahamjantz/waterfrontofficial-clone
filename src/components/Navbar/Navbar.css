@@ -137,6 +137,10 @@ button:hover {
     animation-play-state: running;
 }
 
+.arrow:hover {
+    cursor: pointer;
+}
+
 .arrow-up {
     color: red;
     display: flex;
