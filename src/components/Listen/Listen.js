@@ -18,7 +18,7 @@ const Listen = ({ name }) => {
       <div className='red-transition'>
           <h3 className='home-about-us-title'>LISTEN</h3>
           <img src={redTransition} alt='' />
-        </div>
+      </div>
       <div className='listen-section'>
           <MusicPlayer 
             redAlliance={redAlliance}

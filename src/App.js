@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home'
-// import Merch from './components/Merch/Merch'
+import Merch from './components/Merch/Merch'
 // import About from './components/About/About'
 import Listen from './components/Listen/Listen'
 // import WhatsNext from './components/WhatsNext/WhatsNext'
@@ -23,7 +23,7 @@ function App() {
       <Routes>
           <Route index element={<Home name='' />}/>
           <Route path='/home' element={<Home name='HOME'/>}></Route>
-          <Route path='/merch' element={<ComingSoon name='MERCH'/>}></Route>
+          <Route path='/merch' element={<Merch name='MERCH'/>}></Route>
           <Route path='/about' element={<About name='ABOUT'/>}></Route>
           <Route path='/listen' element={<Listen name='LISTEN'/>}></Route>
           <Route path='/whats-next' element={<ComingSoon name="WHATS-NEXT"/>}></Route>

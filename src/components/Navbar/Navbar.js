@@ -33,6 +33,12 @@ const navArr = [
     },
     {
         id: ranNum(),
+        text: 'MERCH',
+        path: '/merch',
+        offset: 0
+    },
+    {
+        id: ranNum(),
         text: 'LISTEN',
         path: '/listen',
         offset: 0,
