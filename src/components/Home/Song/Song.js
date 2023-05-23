@@ -10,6 +10,7 @@ const Song = ({ src, title, imgSrc, releaseDate }) => {
     <h5 className='release-date'>{releaseDate}</h5>
     <audio
         controls
+        controlsList='nodownload'
         src={src}
         className='player'
     ></audio>
