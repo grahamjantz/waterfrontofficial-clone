@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import * as Scroll from 'react-scroll'
 import './Merch.css'
 
@@ -9,10 +9,10 @@ import merchItems from './merchObject.js'
 
 const Merch = ({ name }) => {
 
-  const [fetchedMerchItems, setFetchedMerchItems] = useState([])
+  // const [fetchedMerchItems, setFetchedMerchItems] = useState([])
 
-  const baseUrl = 'https://api.printify.com/v1/'
-  const productsReq = 'shops/{shop_id}/products.json'
+  // const baseUrl = 'https://api.printify.com/v1/'
+  // const productsReq = 'shops/{shop_id}/products.json'
   const apiToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzN2Q0YmQzMDM1ZmUxMWU5YTgwM2FiN2VlYjNjY2M5NyIsImp0aSI6Ijk1MmI4YTcxOWM1YTY1MDBjYjVhY2Y4ZDQyMjBmNzJhNTQ2MjliMjE5ZWE4ODMzNGQ3N2Y1YmJiZmY5NzcxMTMwYjZlMjJiMjU4ZmIzZTFkIiwiaWF0IjoxNjY5MzE0OTgwLjg2NjMyLCJuYmYiOjE2NjkzMTQ5ODAuODY2MzIyLCJleHAiOjE3MDA4NTA5ODAuODMwNTg2LCJzdWIiOiI4ODAzMTk5Iiwic2NvcGVzIjpbInNob3BzLm1hbmFnZSIsInNob3BzLnJlYWQiLCJjYXRhbG9nLnJlYWQiLCJvcmRlcnMucmVhZCIsIm9yZGVycy53cml0ZSIsInByb2R1Y3RzLnJlYWQiLCJwcm9kdWN0cy53cml0ZSIsIndlYmhvb2tzLnJlYWQiLCJ3ZWJob29rcy53cml0ZSIsInVwbG9hZHMucmVhZCIsInVwbG9hZHMud3JpdGUiLCJwcmludF9wcm92aWRlcnMucmVhZCJdfQ.AACGGiP1Fq8Zzus6Th1k3gH7Mb9fgGg1ENSpMXTr3VIQeAl3laAaocKmKrvU8RWzYhPP8RfPs5814FBu5mw'
 
   useEffect(() => {
