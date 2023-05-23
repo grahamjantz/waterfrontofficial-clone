@@ -8,12 +8,12 @@ const Song = ({ src, title, imgSrc, releaseDate }) => {
     <img src={imgSrc} alt={`${title} cover`} className='song-artwork'/>
     <h4 className='song-name'>{title}</h4>
     <h5 className='release-date'>{releaseDate}</h5>
-    <audio
+    {/* <audio
         controls
-        controlsList='nodownload'
+        controlsList='nodownload noplaybackrate'
         src={src}
         className='player'
-    ></audio>
+    ></audio> */}
     </div>
   )
 }
