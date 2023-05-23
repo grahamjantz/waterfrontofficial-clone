@@ -12,6 +12,7 @@
 
 .black-rip {
     width: 100%;
+    max-width: 100vw;
     margin-top: -20%;
 }
 
@@ -29,13 +30,17 @@
 }
 
 .hero-banner {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 
-.hero-banner-image {
-    display: none;
+.hero-banner img {
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0px 0px 10px var(--main-red);
 }
 
 .hero-title {
@@ -66,6 +71,7 @@
 
 .hero-image {
     width: 100%;
+    max-width: 100vw;
     z-index: 1;
 }
 
@@ -99,12 +105,30 @@
     width: 100%;
 }
 
+.ra-video-container {
+    display: none;
+}
+
 .ra-video {
     display: none;
 }
 
+.ra-video-container-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ra-video-container-mobile img {
+    max-width: 100vw;
+    position: relative;
+    z-index: 1;
+    margin-top: -39px;
+}
+
 .ra-video-mobile {
     width: 100%;
+    max-width: 100vw;
     margin-top: -30px;
 }
 
@@ -194,10 +218,28 @@
         margin-top: -150px;
 
     }
-    .hero-banner-image {
-        display: block;
-        width: 300px;
+
+    .black-rip {
+        margin-top: -10%;
     }
+
+    .ra-video-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ra-video-container img {
+        max-width: 100vw;
+        position: relative;
+        z-index: 1;
+        margin-top: -109px;
+    }
+
+    .ra-video-container-mobile {
+        display: none;
+    }
+
     .ra-video {
         display: block;
         width: 100vw;
@@ -213,12 +255,15 @@
     }
     .hero-banner {
         justify-content: flex-end;
-        background-image: url('../../images//textures/blackRipTransition.1.png');
+        /* background-image: url('../../images//textures/blackRipTransition.1.png'); */
+        background-repeat: no-repeat;
         width: 100%;
-        height: 500px;
-        position: relative;
+        height: fit-content;
         z-index: 2;
-        margin-top: -300px;
+        margin-top: 2rem;
+    }
+    .hero-banner img {
+        width: 300px;
     }
     .home-about-us-title {
         font-size: 3em;

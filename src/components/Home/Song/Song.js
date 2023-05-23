@@ -1,19 +1,20 @@
 import React from 'react'
 import './Song.css'
 
+import Button from '../../Button/Button'
 
-const Song = ({ src, title, imgSrc, releaseDate }) => {
+const Song = ({ title, imgSrc, releaseDate, spotLink, appleLink }) => {
   return (
     <div className='song'>
-    <img src={imgSrc} alt={`${title} cover`} className='song-artwork'/>
-    <h4 className='song-name'>{title}</h4>
-    <h5 className='release-date'>{releaseDate}</h5>
-    {/* <audio
-        controls
-        controlsList='nodownload noplaybackrate'
-        src={src}
-        className='player'
-    ></audio> */}
+      <img src={imgSrc} alt={`${title} cover`} className='song-artwork'/>
+      <div className='song-text'>
+        <h4>{title}</h4>
+        <h5>{releaseDate}</h5>
+      </div>
+      <div className='streaming-links'>
+        <Button href={appleLink} className='' text='Apple Music' />
+        <Button href={spotLink} className='' text='Spotify' />
+      </div>
     </div>
   )
 }

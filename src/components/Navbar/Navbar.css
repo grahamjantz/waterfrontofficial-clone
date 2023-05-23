@@ -13,6 +13,7 @@
 }
 
 .black-header-rip {
+    display: none;
     width: 150%;
     margin-top: -25%;
 }
@@ -200,15 +201,16 @@ button:hover {
     .header {
         padding: 0; 
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         height: 100vh;
     }
     .subnav {
         width: 30%;
     }
     .black-header-rip {
+        display: block;
         width: 100%;
-        position: relative;
+        /* position: relative; */
     }
     .arrow {
         display: block;

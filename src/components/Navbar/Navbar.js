@@ -4,8 +4,11 @@ import * as Scroll from 'react-scroll';
 import { Link as RSLink } from 'react-scroll'
 
 import './Navbar.css'
+
 import wfRedLogo from '../../images/textures/RA/wf-logo.1.png'
 import blackRip from '../../images/textures/blackRipTransition.1.png'
+import drumsBrewhouse from '../../images/photos/drumsBrewhouse.1.jpg'
+
 import { FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 const ranNum = () => {
@@ -43,12 +46,12 @@ const navArr = [
         path: '/listen',
         offset: 0,
     },
-    {
-        id: ranNum(),
-        text: 'WHAT\'S NEXT',
-        path: '/whats-next',
-        offset: 0,
-    },
+    // {
+    //     id: ranNum(),
+    //     text: 'WHAT\'S NEXT',
+    //     path: '/whats-next',
+    //     offset: 0,
+    // },
     {
         id: ranNum(),
         text: 'PRESS',
@@ -152,9 +155,34 @@ const Navbar = () => {
     })
   }
 
+  const headerStyle = {
+    backgroundImage: drumsBrewhouse
+  }
+
     return (
         <>
-            <Element name='header' className='header'>
+            <Element name='header' className='header' style={headerStyle}>
+                <nav className='nav' style={{top: navTop}}>
+                    <ul className='navbar'>
+                        {
+                            window.innerWidth > 750 ? renderDesktopNav() : renderMobileNav()
+                        }
+                    </ul>
+                    <div className='subnav'>
+                        <a href='https://www.instagram.com/waterfrontofficial/' target='_blank' rel="noreferrer" >
+                            <FaInstagram size={size}/>
+                        </a>
+                        <a href='https://www.facebook.com/waterfrontbandofficial' target='_blank' rel="noreferrer" >
+                            <FaFacebook size={size} />
+                        </a>
+                        <a href='https://twitter.com/WFofficialband' target='_blank' rel="noreferrer" >
+                            <FaTwitter size={size} />
+                        </a>
+                        <a href='https://www.youtube.com/channel/UCPLUW_woeKR81y2ORqJIcXg' target='_blank' rel="noreferrer" >
+                            <FaYoutube size={size} />
+                        </a>
+                    </div>
+                </nav>
                 <Link to='/home' style={{ display: 'flex', justifyContent: 'center'}}>
                     <img src={wfRedLogo} alt='waterfront black logo' className='wf-red-logo' />
                 </Link>
@@ -163,31 +191,10 @@ const Navbar = () => {
                     <span className={navMenuClass}></span>
                     <span className={navMenuClass}></span>
                 </div>
-                <nav className='nav' style={{top: navTop}}>
-                    <ul className='navbar'>
-                        {
-                            window.innerWidth > 750 ? renderDesktopNav() : renderMobileNav()
-                        }
-                    </ul>
-                <div className='subnav'>
-                    <a href='https://www.instagram.com/waterfrontofficial/' target='_blank' rel="noreferrer" >
-                        <FaInstagram size={size}/>
-                    </a>
-                    <a href='https://www.facebook.com/waterfrontbandofficial' target='_blank' rel="noreferrer" >
-                        <FaFacebook size={size} />
-                    </a>
-                    <a href='https://twitter.com/WFofficialband' target='_blank' rel="noreferrer" >
-                        <FaTwitter size={size} />
-                    </a>
-                    <a href='https://www.youtube.com/channel/UCPLUW_woeKR81y2ORqJIcXg' target='_blank' rel="noreferrer" >
-                        <FaYoutube size={size} />
-                    </a>
-                </div>
-                </nav>
+                <img src={blackRip} alt='' className='black-header-rip'/>
             </Element>
             <div className='header-footer'>
                 <FaAngleDown className='arrow' size={50} onClick={scrollToContent}/>
-                <img src={blackRip} alt='' className='black-header-rip'/>
             </div>
             <div className='arrow-up' onClick={() => goBackToTop('header')}>
                 <FaAngleUp size={50}/>

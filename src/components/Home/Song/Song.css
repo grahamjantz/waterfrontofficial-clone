@@ -17,6 +17,32 @@
     height: 20px;
 }
 
+.song-text {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.song-text h4 {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.streaming-links {
+    width: 80%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.streaming-links a {
+    margin: 0;
+    padding: 0.5rem;
+}
+
 /* @media only screen and (min-width: 750px) {
     .song-artwork {
         width: 100%;
