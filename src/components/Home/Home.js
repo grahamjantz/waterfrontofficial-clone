@@ -106,17 +106,29 @@ const Home = ({ name }) => {
       </div>
           {/* <h1 className='hero-title' style={{color: 'white', paddingTop: '2em'}}>NEW RELEASES</h1> */}
       <div className='new-releases'>
+        <NewRelease 
+          title='FEVER DREAM'
+          imgSrc={fdArtwork}
+          subtitle='OUT NOW!'
+          description='6 SONG EP NOW STREAMING ON ALL PLATFORMS'
+          href='https://open.spotify.com/album/1Cncn9Rs5CGvAPGDkn0fgr?si=mPkkjjjQTt-ldBlui4lLWQ'
+          buttonText='STREAM NOW'
+        />
         <NewRelease
           title='WORTH FIGHTING FOR'
           imgSrc={wffCover}
           subtitle='OUT NOW!'
           description='OFFICIAL MUSIC VIDEO PREMIERING VIA NEW NOISE MAGAZINE!'
+          href='https://youtu.be/gxckdsWirGM'
+          buttonText='MUSIC VIDEO'
         />
         <NewRelease 
           title='THREE YEARS LATER'
           imgSrc={tylCover}
           subtitle='OUT NOW!'
           description='OFFICIAL MUSIC VIDEO PREMIERING VIA NEW NOISE MAGAZINE!'
+          href='https://www.youtube.com/watch?v=VYkZ10ZP1po'
+          buttonText='MUSIC VIDEO'
         />
         {/* <div className='merch-highlights'>
         <MerchHighlight
@@ -148,11 +160,12 @@ const Home = ({ name }) => {
           <img src={blackTear} alt='' className='black-rip'/>
         </div>
         <div className='home-about-us-paragraph'>
-          <p>
-            Waterfront came together as music students from the University of Lethbridge in 2019. After developing local roots in Rock throughout their initial years, Waterfront expanded their Canadian footprint with the 2021 release of their debut EP, <em>'New Heights'</em>, where they partnered with Vancouver based producing team, THE RENAISSANCE.
+          <p className='about-us-paragraph'>
+            Calgary based rock band Waterfront came together as music students from the University of Lethbridge in 2019. After developing local roots throughout their initial years, Waterfront expanded their Canadian footprint with the 2021 release of their debut EP, <em>"New Heights"</em>, where they partnered with Vancouver based artists of <strong>The Faceplants</strong>. The same collaboration produced the groups sophomore EP entitled <em>"Fever Dream</em> which released in 2022.
           </p>
-          <p>
-            The same collaboration will see Waterfront release their sophomore EP entitled <em>'Fever Dream'</em> in this Winter.  The latest singles <em>Red Alliance</em>, <em>Three Years Later</em>, and <em>Worth Fighting For</em>, and their debut EP <em>New Heights</em> can be heard now.
+          <br/>
+          <p className='about-us-paragraph'>
+            Waterfront aims to keep rock alive and well with high octance energy. The quintuplet are positioned to dig deeper into a harder sound for 2023.
           </p>
         </div> 
       </div>
