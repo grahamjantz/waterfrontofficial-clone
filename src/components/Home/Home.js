@@ -70,10 +70,6 @@ const Home = ({ name }) => {
     }
   },[])
 
-  useEffect(() => {
-  },[])
-
-
   return (
     <Element className='home' name={name}>
       <div className='home-landing-page'>

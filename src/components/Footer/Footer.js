@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { FaInstagram, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaSpotify } from "react-icons/fa";
 
 const size = 35;
 
@@ -15,6 +15,9 @@ const Footer = () => {
           <button type='submit' className='subscribe-submit'>SUBMIT</button>
         </form>
         <div className='footer-socials'>
+          <a href='https://open.spotify.com/artist/0iFZ2vkAsRYe3J1kE9XjSn?si=4L_8_0o0SCuH5Mi4cmWvjQ' target='_blank' rel="noreferrer" >
+              <FaSpotify size={size}/>
+          </a>
           <a href='https://www.instagram.com/waterfrontofficial/' target='_blank' rel="noreferrer" >
               <FaInstagram size={size}/>
           </a>
