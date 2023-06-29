@@ -38,6 +38,7 @@
   --main-black: #000000;
   --main-white: #ffffff;
   --main-red: #db0000;
+  --main-green: #4FF259;
 }
 
 .App {
@@ -47,7 +48,7 @@
   flex-direction: column;
   align-items: center;
   overflow-x: clip;
-  background-image: url('./images/textures/blackTexture.3.jpg');
+  background-image: url('./images/textures/greenTexture.jpg');
   background-size: 100%;
   background-repeat: repeat;
 }

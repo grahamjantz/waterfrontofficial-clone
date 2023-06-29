@@ -1,20 +1,29 @@
 .header {
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .header-div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: transparent;
-    background-image: url('../../images/photos/drumsBrewhouse.1.jpg');
-    background-position: center;
+    background-image: url('../../images/IWF-Green/IMG_1462.JPG');
+    background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
     height: fit-content;
     height: 35vh;
     width: 100%;
     padding-top: 20px;
+}
+
+.header-div img {
+    width: 600px;
+    position: relative;
+    top: -30vh;
+    filter: drop-shadow(5px 5px 5px black);
 }
 
 .black-header-rip-2 {
@@ -59,18 +68,20 @@
 }
 
 .nav {
-    background-image: url('../../images/textures/blackTexture.3.jpg');
+    /* background-image: url('../../images/textures/blackTexture.3.jpg'); */
     background-size: 100%;
     background-repeat: repeat;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 2em 0;
     gap: 2em;
     position: absolute;
     z-index: 100;
     transition: 1s;
     box-shadow: 0 0 5px var(--main-red);
+    height: fit-content;
 }
 
 .nav-menu > span.active:first-of-type {
@@ -93,13 +104,16 @@
     gap: 2em;
     width: 100%;
     justify-content: space-around;
+    background-color: var(--main-black);
+    padding: 0.5rem 0;
 }
 
 .navbar a {
     text-decoration: none;
-    color: var(--main-red);
+    color: var(--main-green);
     padding: 1em;
-    font-family: 'MADE Outer Sans Black';
+    font-family: 'MADE Outer Sans Bold';
+    letter-spacing: 0.3rem;
 }
 
 .navbar a:hover {
@@ -115,11 +129,16 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    padding: 0 3em;
+    align-items: center;
+    padding: 0.5rem 3em 0.5rem 0;
+    background-color: var(--main-black);
+    border-radius: 3px;
 }
 
 .subnav a {
-    color: var(--main-red);
+    color: var(--main-green);
+    display: flex;
+    align-items: center;
 }
 .subnav a:hover {
     color: var(--main-white);
@@ -154,7 +173,7 @@ button:hover {
 }
 
 .arrow-up {
-    color: red;
+    color: var(--main-green);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,12 +215,13 @@ button:hover {
     }
     .nav {
         top: 0 !important;
+        left: 0;
         box-shadow: none;
-        position: static;
+        position: fixed;
         height: fit-content;
-        background-image: url('../../images/textures/blackRipTransitionDown.2.png');
-        background-repeat: no-repeat;
-        height: 400px;
+        /* background-image: url('../../images/textures/blackRipTransitionDown.2.png');
+        background-repeat: no-repeat; */
+        /* height: 400px; */
     }
     .nav-menu {
         display: none;
@@ -231,7 +251,7 @@ button:hover {
     }
     .arrow {
         display: block;
-        color: red;
+        color: var(--main-green);
         z-index: 10;
         position: relative;
         top: -80px;

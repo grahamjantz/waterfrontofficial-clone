@@ -14,6 +14,7 @@ import wfAtBrewhouse from '../../images/photos/wfAtBrewhouse.jpg'
 import redTransition from '../../images/textures/redTransition.1.png'
 import blackRip from '../../images/textures/blackRipTransition.1.png'
 import fdArtwork from '../../images/artwork/FeverDreamArtwork.png'
+import wfLogo from '../../images/IWF-Green/IMG_1314.PNG'
 
 import redAllianceVideo from '../../images/video/redAllianceVideo.mp4'
 import { useState } from 'react';
@@ -72,14 +73,7 @@ const Home = ({ name }) => {
 
   return (
     <Element className='home' name={name}>
-      <div className='home-landing-page'>
-
-        <div className='banner'>
-          <div className='ra-video-container'>
-            <video src={raVideo} muted autoPlay controls={false} className='ra-video' playsInline loop></video>
-            <img src={blackTear} alt=''/>
-          </div>
-          <div className='hero-banner'>
+      <div className='hero-banner'>
             <img src={fdArtwork} alt=''/>
             <h1 className='hero-title'>FEVER DREAM<br/>OUT NOW!</h1>
             <Button 
@@ -88,102 +82,7 @@ const Home = ({ name }) => {
               href='https://open.spotify.com/album/1Cncn9Rs5CGvAPGDkn0fgr?si=DmwqpfH_SleDqB76FPGDzg'  
             />
           </div>
-        </div>
-
-        <div className='hero-image'>
-          <img src={wfGroupShot} alt='' />
-        </div>
-
-        <div className='ra-video-container-mobile'>
-          <video src={raVideo} muted autoPlay controls={false} className='ra-video-mobile' playsInline loop loading='lazy'></video>
-          <img src={blackTear} alt=''/>
-        </div>
-
-      </div>
-      <div className='red-transition new-releases-heading'>
-        <h3 className='home-about-us-title'>NEW RELEASES</h3>
-        <img src={redTear} alt='' />
-      </div>
-          {/* <h1 className='hero-title' style={{color: 'white', paddingTop: '2em'}}>NEW RELEASES</h1> */}
-      <div className='new-releases'>
-        <NewRelease 
-          title='FEVER DREAM'
-          imgSrc={fdArtwork}
-          subtitle='OUT NOW!'
-          description='6 SONG EP NOW STREAMING ON ALL PLATFORMS'
-          href='https://open.spotify.com/album/1Cncn9Rs5CGvAPGDkn0fgr?si=mPkkjjjQTt-ldBlui4lLWQ'
-          buttonText='STREAM NOW'
-        />
-        <NewRelease
-          title='WORTH FIGHTING FOR'
-          imgSrc={wffCover}
-          subtitle='OUT NOW!'
-          description='OFFICIAL MUSIC VIDEO PREMIERING VIA NEW NOISE MAGAZINE!'
-          href='https://youtu.be/gxckdsWirGM'
-          buttonText='MUSIC VIDEO'
-        />
-        <NewRelease 
-          title='THREE YEARS LATER'
-          imgSrc={tylCover}
-          subtitle='OUT NOW!'
-          description='OFFICIAL MUSIC VIDEO PREMIERING VIA NEW NOISE MAGAZINE!'
-          href='https://www.youtube.com/watch?v=VYkZ10ZP1po'
-          buttonText='MUSIC VIDEO'
-        />
-        {/* <div className='merch-highlights'>
-        <MerchHighlight
-        imgSrc={yellowTee}
-        href='#'
-        />
-        <MerchHighlight
-        imgSrc={blueCrewneck}
-        href='#'
-        />
-        <MerchHighlight
-        imgSrc={beanie}
-        href='#'
-        />
-        </div>
-        <Button 
-        text='FULL MERCH STORE'
-      /> */}
-      </div>
-
-      <div className='red-transition'>
-        <h3 className='home-about-us-title'>ABOUT US</h3>
-        <img src={redTear} alt='' />
-      </div>
-
-      <div className='home-about-us'>
-        <div className='home-about-us-img-p'>
-          <img className='live-at-owl'src={wfAtBrewhouse} alt='waterfront live at the owl'/>
-          <img src={blackTear} alt='' className='black-rip'/>
-        </div>
-        <div className='home-about-us-paragraph'>
-          <p className='about-us-paragraph'>
-            Calgary based rock band Waterfront came together as music students from the University of Lethbridge in 2019. After developing local roots throughout their initial years, Waterfront expanded their Canadian footprint with the 2021 release of their debut EP, <em>"New Heights"</em>, where they partnered with Vancouver based artists of <strong>The Faceplants</strong>. The same collaboration produced the groups sophomore EP entitled <em>"Fever Dream</em> which released in 2022.
-          </p>
-          <br/>
-          <p className='about-us-paragraph'>
-            Waterfront aims to keep rock alive and well with high octance energy. The quintuplet are positioned to dig deeper into a harder sound for 2023.
-          </p>
-        </div> 
-      </div>
-
-      <div className='red-transition'>
-        <h3 className='home-about-us-title'>LISTEN</h3>
-        <img src={redTear} alt='' />
-      </div>
-
-      <div className='listen-section'>
-        <MusicPlayer/>
-      </div>
-
-      <div className='red-transition'>
-        <h3 className='home-about-us-title'>CONTACT</h3>
-        <img src={redTear} alt='' />
-      </div>
-
+          
       <ContactForm />
     </Element>
   )

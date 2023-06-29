@@ -8,6 +8,7 @@ import './Navbar.css'
 import wfRedLogo from '../../images/textures/RA/wf-logo.1.png'
 import blackRip from '../../images/textures/blackRipTransition.1.png'
 import drumsBrewhouse from '../../images/photos/drumsBrewhouse.1.jpg'
+import wfLogo from '../../images/IWF-Green/IMG_1314.PNG'
 
 import { FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaAngleDown, FaAngleUp, FaSpotify } from "react-icons/fa";
 
@@ -22,12 +23,6 @@ const navArr = [
         path: '/home',
         offset: 0,
     },
-    // {
-    //     id: ranNum(),
-    //     text: 'MERCH',
-    //     path: '/merch',
-    //     offset: 0,
-    // },
     {
         id: ranNum(),
         text: 'ABOUT',
@@ -46,12 +41,6 @@ const navArr = [
         path: '/listen',
         offset: 0,
     },
-    // {
-    //     id: ranNum(),
-    //     text: 'WHAT\'S NEXT',
-    //     path: '/whats-next',
-    //     offset: 0,
-    // },
     {
         id: ranNum(),
         text: 'PRESS',
@@ -137,7 +126,7 @@ const Navbar = () => {
   const renderMobileNav = () => {
     return navArr.map((item) => {
         return (
-            <li key={item.id}>
+            <li key={item.id} className='mobile'>
                 <NavLink to={`${item.path}`} className='nav-btn' onClick={handleClick}>
                     {item.text}
                 </NavLink>
@@ -181,7 +170,8 @@ const Navbar = () => {
                     <nav className='nav' style={{top: navTop}}>
                         <ul className='navbar'>
                             {
-                                window.innerWidth > 750 ? renderDesktopNav() : renderMobileNav()
+                                renderMobileNav()
+                                // window.innerWidth > 750 ? renderDesktopNav() : renderMobileNav()
                             }
                         </ul>
                         <div className='subnav'>
@@ -210,10 +200,11 @@ const Navbar = () => {
                         <span className={navMenuClass}></span>
                         <span className={navMenuClass}></span>
                     </div>
-                    <img src={blackRip} alt='' className='black-header-rip'/>
+                    {/* <img src={blackRip} alt='' className='black-header-rip'/> */}
+                    <img src={wfLogo}/>
                 </div>
 
-                <img src={blackTear} alt='' className='black-header-rip-2'/>
+                {/* <img src={blackTear} alt='' className='black-header-rip-2'/> */}
             </Element>
             <div className='header-footer'>
                 <FaAngleDown className='arrow' size={50} onClick={scrollToContent}/>
